@@ -1,6 +1,6 @@
 const eyes = function (selector) {
   const eye = document.querySelector(selector),
-    puple = eye.querySelector(".pupil"),
+    pupil = eye.querySelector(".pupil"),
     eyeArea = eye.getBoundingClientRect();
 
   const moveEye = function (mouseX, mouseY) {
@@ -8,7 +8,7 @@ const eyes = function (selector) {
       mouseY - (eyeArea.y + eyeArea.height * 0.5),
       mouseX - (eyeArea.x + eyeArea.width * 0.5)
     );
-    puple.style.transform =
+    pupil.style.transform =
       "rotate(" + ((180 * radian) / Math.PI - 90) + "deg)";
   };
 
