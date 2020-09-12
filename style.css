@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.wrapper {
+.giraffe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,33 +16,25 @@ body {
 .eyes {
     display: flex;
     position: absolute;
-    top: 60px;
-    left: 162px;
+    top: 120px;
+    left: 217px;
 }
 
 .eye {
     position: relative;
-    width: 120px;
-    height: 120px;
-    border: 4px solid black;
+    width: 70px;
+    height: 70px;
+    border: 6px solid black;
     border-radius: 50%;
     background-color: white;
-    transform: scaleX(0.9);
-}
-
-.eye-1 {
-    left: 7px;
-}
-
-.eye-2 {
-    left: -7px;
 }
 
 .pupil {
     position: absolute;
-    left: 45px;
+    left: 35px;
     bottom: 0;
     width: 30px;
+    /* inherit : 부모 요소로부터 상속받은 값 */
     height: inherit;
 }
 
